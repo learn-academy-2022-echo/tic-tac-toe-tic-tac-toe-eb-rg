@@ -45,6 +45,7 @@ const winning = () => {
       setWinner("⭕️")
     }
   })
+}
 
   const restartGame = () => {
     setSquares(Array(9).fill(null))
@@ -62,10 +63,10 @@ const winning = () => {
       <div className='button'>
         <button onClick={restartGame}>
           Play Again
-          </button></div>
-      }
-       
-        <div className="game-board">
+          </button>
+      </div>
+      }       
+      <div className="boardgame">
         {squares.map((value, index) => {
           return(
             <Squares
@@ -79,7 +80,6 @@ const winning = () => {
       </div>
       </>
   )
-}
 }
 
 export default App
