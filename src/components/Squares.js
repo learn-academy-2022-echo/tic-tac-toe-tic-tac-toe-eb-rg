@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-const Square = (props) => {
+
+const Squares = (props) => {
   const handleClick = () => {
     props.playerSelection(props.index)
   }
   return (
     <>
-      <div className="square" onClick={handleClick}>
+      <div className="squares" onClick={handleClick}>
         {props.value}
         
       </div>
     </>
   )
 }
-export default Square
+export default Squares
